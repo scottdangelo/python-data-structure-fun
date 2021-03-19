@@ -1,0 +1,85 @@
+#! /usr/bin/env python
+
+from Tree import Node, BinaryTree
+
+node = Node(7)
+ret_tree = BinaryTree(node)
+one_node = Node(1)
+two_node = Node(2)
+three_node = Node(3)
+four_node = Node(4)
+five_node = Node(5)
+six_node = Node(6)
+seven_node = Node(7)
+eight_node = Node(8)
+nine_node = Node(9)
+ten_node = Node(10)
+twelve_node = Node(12)
+fourteen_node = Node(14)
+eighteen_node = Node(18)
+
+ret_tree.insert(ret_tree.root, two_node)
+ret_tree.insert(ret_tree.root, three_node)
+ret_tree.insert(ret_tree.root, nine_node)
+ret_tree.insert(ret_tree.root, six_node)
+ret_tree.insert(ret_tree.root, one_node)
+ret_tree.insert(ret_tree.root, ten_node)
+ret_tree.insert(ret_tree.root, eight_node)
+# 
+# ten_tree = BinaryTree(ten_node)
+# ten_tree.insert(ten_tree.root, five_node)
+# ten_tree.insert(ten_tree.root, seven_node)
+# ten_tree.insert(ten_tree.root, two_node)
+# ten_tree.insert(ten_tree.root, twelve_node)
+# ten_tree.insert(ten_tree.root, eighteen_node)
+# ten_tree.insert(ten_tree.root, four_node)
+# ten_tree.insert(ten_tree.root, fourteen_node)
+# 
+Aone_node = Node(1)
+Atwo_node = Node(2)
+Athree_node = Node(3)
+Afour_node = Node(4)
+Afive_node = Node(5)
+Asix_node = Node(6)
+Aseven_node = Node(7)
+Aeight_node = Node(8)
+Anine_node = Node(9)
+Aten_node = Node(10)
+Atwelve_node = Node(12)
+Afourteen_node = Node(14)
+Aeighteen_node = Node(18)
+
+
+ten_tree = BinaryTree(Aten_node)
+ten_tree.insert(ten_tree.root, Afive_node)
+ten_tree.insert(ten_tree.root, Aseven_node)
+ten_tree.insert(ten_tree.root, Atwo_node)
+ten_tree.insert(ten_tree.root, Atwelve_node)
+ten_tree.insert(ten_tree.root, Aeighteen_node)
+ten_tree.insert(ten_tree.root, Afour_node)
+ten_tree.insert(ten_tree.root, Afourteen_node)
+
+print("in_order_traversal from root:")
+ret_tree.in_order_traversal(ret_tree.root)
+
+# print("in_order_traversal from six_node:")
+# ret_tree.in_order_traversal(six_node)
+
+# print("successor of one_node: {}".format(ret_tree.get_successor(one_node)))
+# print("successor of root_node: {}".format(ret_tree.get_successor(ret_tree.root)))
+# print("successor of three_node: {}".format(ret_tree.get_successor(three_node)))
+
+
+print("\nTEN TREE")
+print("ten_tree in_order_traversal from root:")
+ret_tree.in_order_traversal(ten_tree.root)
+
+# print("successor of Atwo_node: {}".format(ret_tree.get_successor(Atwo_node)))
+# print("successor of root_node: {}".format(ret_tree.get_successor(ret_tree.root)))
+# print("successor of Aseven_node: {}".format(ret_tree.get_successor(Aseven_node)))
+# print("successor of Atwelve_node: {}".format(ret_tree.get_successor(Atwelve_node)))
+# print("successor of Afour_node: {}".format(ret_tree.get_successor(Afour_node)))
+# print("successor of Aeighteen_node: {}".format(ret_tree.get_successor(Aeighteen_node)))
+
+print("ten_tree post_order traversal from root:")
+ret_tree.post_order_traversal(ten_tree.root)
